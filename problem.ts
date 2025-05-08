@@ -33,13 +33,12 @@
   }
 
   concatenateArrays<string>(["a", "b"], ["c"]);
-  //   console.log(result);
   concatenateArrays<number>([1, 2], [3, 4], [5]);
 }
 {
   class Vehicle {
     private make: string;
-    year: number;
+    private year: number;
     constructor(make: string, year: number) {
       this.make = make;
       this.year = year;
@@ -73,9 +72,8 @@
     }
   }
   processValue("hello");
-  //   console.log(result);
+
   processValue(10);
-  //   console.log(result3);
 }
 {
   interface Product {
@@ -121,7 +119,7 @@
       } else return "Weekday";
     }
     getDayType(Day.Monday);
-    const result = getDayType(Day.Sunday);
+    getDayType(Day.Sunday);
   }
 }
 {
@@ -129,7 +127,7 @@
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         if (n < 0) {
-          reject(Error("cannot run the squer value "));
+          reject(Error("cannot run the negetive value "));
         } else {
           resolve(n * n);
         }
